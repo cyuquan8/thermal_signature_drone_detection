@@ -1,5 +1,5 @@
 # Drone Detection using Thermal Signature
-This repository highlights the work for night-time drone detection using a using an Optris PI Lightweight thermal camera. The work is published in the International Conference of Unmanned Air Systems 2021 ([ICUAS 2021](http://www.uasconferences.com/2021_icuas/)) and the paper can be read in detail in [ICUAS_2021_paper](https://https://github.com/mion666459/thermal_signature_drone_detection/blob/main/ICUAS_2021_paper.pdf).
+This repository highlights the work for night-time drone detection using a using an Optris PI Lightweight thermal camera. The work is published in the International Conference of Unmanned Air Systems 2021 ([ICUAS 2021](http://www.uasconferences.com/2021_icuas/)) and the paper can be read in detail in [ICUAS_2021_paper](https://github.com/mion666459/thermal_signature_drone_detection/blob/main/ICUAS_2021_paper.pdf).
 
 ## Requirements
 
@@ -10,7 +10,7 @@ The following are the requirements with Python 3.7.7
 	numpy==1.20.3	
 ## Model Architecture
 
-The following diagram highlights the architecture of model based on YOLOV3. However, unlike typical single image object detection, the model takes in the concatenation of a specified number of images in the past relative to the image of interest. This is to encapsulate the motion of the drone as an input feature for detection, a necessity given that thermal signatures of different are generally globular in shape after a certain distance depending on the fidelity of the thermal camera used. Further details can be found in [ICUAS_2021_paper](https://https://github.com/mion666459/thermal_signature_drone_detection/blob/main/ICUAS_2021_paper.pdf).
+The following diagram highlights the architecture of model based on YOLOV3. However, unlike typical single image object detection, the model takes in the concatenation of a specified number of images in the past relative to the image of interest. This is to encapsulate the motion of the drone as an input feature for detection, a necessity given that thermal signatures of different are generally globular in shape after a certain distance depending on the fidelity of the thermal camera used. Further details can be found in [ICUAS_2021_paper](https://github.com/mion666459/thermal_signature_drone_detection/blob/main/ICUAS_2021_paper.pdf).
 
 ![Model Architecture](/readme_images/model_architecture.png)
 
@@ -89,7 +89,5 @@ An example of correct drone detection in outdoor environment shown below.
 
 ![Outdoor Prediction](/readme_images/outdoor_prediction.jpg)
 
-Video of model predictions shown in indoor environment shown below.
-
-<video src="predicted_videos/model_2/free_2.mp4"></video>
+Video of model predictions shown in indoor environment can be found [here](https://github.com/mion666459/thermal_signature_drone_detection/blob/main/predicted_videos/model_2/free_2.mp4).
 
